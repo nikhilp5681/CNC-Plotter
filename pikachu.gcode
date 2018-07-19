@@ -1,4 +1,3 @@
-(Scribbled version of C:\Users\nikhi\AppData\Local\Temp\ink_ext_XXXXXX.svgSCJYLZ @ 3500.00)
 ( unicorn.py --tab="plotter_setup" --pen-up-angle=50 --pen-down-angle=30 --start-delay=150 --stop-delay=150 --xy-feedrate=3500 --z-feedrate=150 --z-height=1.3877799719215278e-016 --finished-height=0 --register-pen=true --x-home=0 --y-home=0 --num-copies=1 --continuous=false --pause-on-layer-change=false C:\Users\nikhi\AppData\Local\Temp\ink_ext_XXXXXX.svgSCJYLZ )
 G21 (metric ftw)
 G90 (absolute mode)
