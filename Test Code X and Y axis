@@ -1,0 +1,32 @@
+#include <AFMotor.h>
+#include <Stepper.h>
+
+AF_Stepper motor(100, 1);
+AF_Stepper motor2(100, 2);
+void setup() {
+
+Serial.begin(9600);
+Serial.println(“Stepper test!”);
+motor.setSpeed(250);
+motor2.setSpeed(250);
+
+}
+void loop() {
+Serial.println(“Micrsostep steps”);
+
+for(int i = 0; i<130; i++){
+motor.step(1, FORWARD, MICROSTEP);
+motor2.step(1, FORWARD, MICROSTEP);
+}
+
+for(int i = 0; i<130; i++){
+motor.step(1, BACKWARD, MICROSTEP);
+motor2.step(1, BACKWARD, MICROSTEP);
+}
+
+motor.step(100, FORWARD, MICROSTEP);
+motor2.step(100,FORWARD, MICROSTEP);
+motor.step(100, BACKWARD, MICROSTEP);
+motor2.step(100,BACKWARD, MICROSTEP);
+
+}
